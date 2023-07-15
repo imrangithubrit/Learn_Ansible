@@ -1,7 +1,7 @@
 - name: some playbook
   hosts: all
   tasks:
-    - name: Demo Task
-       ansible.builtin.yum:
-        name: nginx
-        state: installed
+    - name: Install the latest version of Apache
+      ansible.builtin.yum:
+       name: nginx
+       state: latest
