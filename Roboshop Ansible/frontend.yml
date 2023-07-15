@@ -8,9 +8,9 @@
        state: latest
 
     - name: Removing Old App content
-       ansible.builtin.file:
-        path: /usr/share/nginx/html
-        state: absent
+      ansible.builtin.file:
+       path: /usr/share/nginx/html
+       state: absent
 
     - name: Create directory
       ansible.builtin.file:
