@@ -1,0 +1,4 @@
+- name: Demo Task
+  ansible.builtin.yum:
+  name: nginx
+  state: installed
